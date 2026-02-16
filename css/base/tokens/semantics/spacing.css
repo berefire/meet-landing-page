@@ -1,0 +1,46 @@
+:root {
+     /* PAGE STRUCTURE */
+  --space-header-inline: var(--space-1000);
+  --space-page-inline: var(--space-400);
+  --space-header-block-start: var(--space-500);
+  --space-section-block-start: var(--space-800);
+  --space-section-block-end: var(--space-400);
+  --space-main-block-start: var(--space-400);
+  --space-main-block-end: var(--space-800);
+
+  --space-stack-xs: var(--space-200);
+  --space-stack-sm: var(--space-300);
+  --space-stack-md: var(--space-400);
+  --space-stack-lg: var(--space-500);
+  --space-stack-xl: var(--space-800);
+
+  --space-inline-sm: var(--space-200);
+  --space-inline-md: var(--space-300);
+}
+
+
+/* TABLET */
+@media (min-width: 48em) {
+    :root {
+        --space-section-block-end: var(--space-800);
+        --space-main-block-start: var(--space-700);    
+
+        --space-stack-lg: var(--space-900);
+
+        --space-inline-md: var(--space-400);
+
+    }
+    
+}
+
+/* DESKTOP */
+@media (min-width: 64em) {
+    :root {
+        --space-header-block-start: var(--space-1000);
+        --space-main-block-end: var(--space-900);
+
+        --space-stack-lg: var(--space-400);
+
+        --space-inline-md: var(--space-400);
+    }
+}
