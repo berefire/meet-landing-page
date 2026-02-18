@@ -1,0 +1,27 @@
+.step {
+  display: grid;
+  justify-items: center;
+}
+
+.step::before {
+  content: "";
+
+  width: 0.125em;
+  height: var(--line-height);
+  background: var(--color-border-muted);
+}
+
+.step span {
+  width: var(--circle-size);
+  height: var(--circle-size);
+
+  display: grid;
+  place-items: center;
+
+  border: 0.125em solid var(--color-border-muted);
+  border-radius: 50%;
+
+  font-weight: var(--font-weight-black);
+  color: var(--color-text-muted);
+  background-color: var(--white);
+}

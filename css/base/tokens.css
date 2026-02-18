@@ -1,0 +1,181 @@
+/* PRIMITIVES */
+:root {
+
+    /* Colors */
+    --cyan-600: hsl(192, 37%, 48%);
+    --cyan-300: hsl(192, 90%, 77%);
+    --purple-600: hsl(268, 34%, 53%);
+    --purple-300: hsl(268, 100%, 86%);
+    --slate-900: hsl(240, 21%, 20%);
+    --slate-600: hsl(240, 10%, 57%);
+    --slate-300: hsl(240, 18%, 85%);
+    --white: hsl(0, 0%, 98%);
+
+    /* Radius */
+    --radius-xl: calc(29 / var(--base) * 1rem); /* 29px */
+    
+    /* Spacing */
+    --base: 16;
+
+  --space-50: calc(4 / var(--base) * 1rem); /* 4px */
+  --space-100: calc(8 / var(--base) * 1rem); /* 8px */
+  --space-200: calc(16 / var(--base) * 1rem); /* 16px */
+  --space-300: calc(24 / var(--base) * 1rem); /* 24px */
+  --space-400: calc(32 / var(--base) * 1rem); /* 32px */
+  --space-420: calc(36 / var(--base) * 1rem); /* 36px */
+  --space-450: calc(40 / var(--base) * 1rem); /* 40px */
+
+  --space-500: calc(48 / var(--base) * 1rem); /* 48px */
+  --space-700: calc(56 / var(--base) * 1rem); /* 56px */
+  --space-800: calc(64 / var(--base) * 1rem); /* 64px */
+  --space-900: calc(72 / var(--base) * 1rem); /* 72px */
+  --space-1000: calc(80 / var(--base) * 1rem); /* 80px */
+  --space-1350: calc( 108 / var(--base) * 1rem); /* 108px */
+  --space-1400: calc(112 / var(--base) * 1rem); /* 112px */
+  --space-1600: calc(360 / var(--base) * 1rem); /* 360px */
+
+
+  /* Typography */
+    /* Font family */
+  --font-family-base: "Red Hat Display", sans-serif;
+
+  /* Font sizes */
+  --base: 16;
+
+  --font-size-100: calc(12 / var(--base) * 1rem);
+  --font-size-200: calc(14 / var(--base) * 1rem);
+  --font-size-300: calc(16 / var(--base) * 1rem);
+  --font-size-400: calc(18 / var(--base) * 1rem);
+  --font-size-500: calc(32 / var(--base) * 1rem);
+  --font-size-600: calc(36 / var(--base) * 1rem);
+  --font-size-700: calc(40 / var(--base) * 1rem);
+  --font-size-800: calc(48 / var(--base) * 1rem);
+  --font-size-900: calc(64 / var(--base) * 1rem);
+
+  /* Line Height */
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+
+  /* Font Weights */
+  --font-weight-medium: 500;
+  --font-weight-black: 900;
+
+  /* Letter Spacing */
+  --tracking-wide: 0.25em;
+}
+
+/* SEMANTICS */
+:root {
+    /* Colors */
+    /* BRAND */
+    --color-primary: var(--cyan-60);
+    --color-accent: var(--purple-600);
+
+    /* TEXT */
+    --color-text-main: var(--slate-900);
+    --color-text-muted: var(--slate-600);
+    --color-text-footer: var(--white);
+
+    --color-border-muted: var(--slate-300);
+
+    /* SPECIAL TEXT */
+    --color-text-eyebrow: var(--cyan-600);
+    --color-text-btn-primary: var(--white);
+    --color-text-btn-secondary: var(--cyan-300);
+
+    /* BUTTON BACKGROUNDS */
+    --color-btn-primary-bg: var(--cyan-600);
+    --color-btn-secondary-bg: var(--purple-600);
+
+    /* Gradient */
+    --color-gradient-bg: rgba(77, 150, 168, 0.9);
+
+    /* Spacing */
+         /* PAGE STRUCTURE */
+  --space-header-inline: var(--space-1000);
+  --space-header-block-start: var(--space-500);
+  --space-page-inline: var(--space-400);
+  --space-section-block-start: var(--space-800);
+  --space-section-block-end: var(--space-400);
+  --space-main-block-start: var(--space-400);
+  --space-main-block-end: var(--space-800);
+  --space-cta-block-start: var(--space-420);
+  
+
+  --space-stack-xs: var(--space-200);
+  --space-stack-sm: var(--space-300);
+  --space-stack-md: var(--space-400);
+  --space-stack-lg: var(--space-500);
+  --space-stack-xl: var(--space-800);
+
+  --space-inline-sm: var(--space-200);
+  --space-inline-md: var(--space-200);
+
+  /* Figure step */
+    --line-height: var(--space-1000);
+    --circle-size: var(--space-700);
+    --space-background-position: var(--space-1350);
+
+  /* Typography */
+      /* HEADINGS */
+    --text-heading-xl: var(--font-size-700);
+    --text-heading-lg: var(--font-size-500);
+
+    /* BODY TEXT */
+    --text-body: var(--font-size-300);
+
+    /* EYEBROW / LABEL */
+    --text-eyebrow: var(--font-size-100);
+
+    /* FONT WEIGHTS */
+    --fw-heading: var(--font-weight-black);
+    --fw-body: var(--font-weight-medium);
+
+    /* LINE HEIGHT */
+    --lh-heading: var(--line-height-tight);
+    --lh-body: var(--line-height-normal);
+
+    /* LETTER SPACING */
+    --tracking-eyebrow: var(--tracking-wide);
+}
+
+/* TABLET */
+@media (min-width: 48em) {
+    :root {
+        --space-section-block-end: var(--space-800);
+        --space-main-block-start: var(--space-700);    
+
+        --space-inline-md: var(--space-300);
+
+                /* HEADINGS */
+        --text-heading-xl: var(--font-size-800);
+        --text-heading-lg: var(--font-size-600);
+
+        /* EYEBROW / LABEL */
+        --text-eyebrow: var(--font-size-200);
+
+    }
+    
+}
+
+/* DESKTOP */
+@media (min-width: 64em) {
+    :root {
+        --space-header-block-start: var(--space-1000);
+        --space-main-block-end: var(--space-900);
+
+        --space-stack-sm: var(--space-400);
+
+        --space-inline-md: var(--space-400);
+
+              /* HEADINGS */
+        --text-heading-xl: var(--font-size-900);
+        --text-heading-lg: var(--font-size-700);
+
+        /* BODY TEXT */
+        --text-body: var(--font-size-400);
+
+        /* EYEBROW / LABEL */
+        --text-eyebrow: var(--font-size-300);
+    }
+}

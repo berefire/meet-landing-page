@@ -1,0 +1,23 @@
+.box--header {
+    margin-block-start: var(--space-header-block-start);
+    margin-inline: var(--space-header-inline); 
+}
+
+.box--features {
+    margin-inline: var(--space-page-inline);
+}
+
+.box--cta {
+    margin-block-start: var(--space-cta-block-start);
+    margin-inline: var(--space-page-inline);
+}
+
+.box {
+    margin-inline: var(--space-page-inline);
+}
+
+@media (min-width: 64em) {
+    .box {
+        margin-inline: 0;
+    }
+}

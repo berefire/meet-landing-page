@@ -1,0 +1,9 @@
+.cta .btn--primary {
+    background-color: var(--color-accent);
+}
+
+.cta .btn__version {
+    --color-btn-secondary-bg: var(--purple-300);
+
+    color: var(--color-btn-secondary-bg);
+}

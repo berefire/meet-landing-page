@@ -1,0 +1,23 @@
+.btn {
+    text-decoration: none;
+    color: var(--color-text-btn-primary);
+    font-weight: var(--fw-heading);
+    line-height: var(--lh-heading);
+    padding: var(--space-stack-xs) var(--space-450);
+    border-radius: var(--radius-xl);
+    display: inline-flex;
+    
+}
+
+.btn--primary {
+    background-color: var(--color-btn-primary-bg); 
+    gap: var(--space-50);  
+}
+
+.btn--secondary {
+    background-color: var(--color-btn-secondary-bg);
+}
+
+.btn__version {
+    color: var(--color-text-btn-secondary);
+}
