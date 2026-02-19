@@ -4,10 +4,25 @@
         linear-gradient(var(--color-gradient-bg), var(--color-gradient-bg)),
         url("../../assets/mobile/image-footer.jpg");
     background-size: cover;
-    background-position: center var(--space-1350);
+    background-position: center 20%;
     background-repeat: no-repeat;
-    padding-block-end: var(--space-main-block-end);
+    padding-block-end: var(--space-cta-block-end);
     color: var(--color-text-footer);
+}
+
+.cta__figure {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.cta__figure .step {
+  margin-inline: auto;
+}
+
+.cta__content {
+  padding-block-start: 0.5rem;
 }
 
 .cta__title {
@@ -24,6 +39,13 @@
 
 
 @media (min-width: 48em){
+    .cta {
+        background-image:
+        linear-gradient(var(--color-gradient-bg), var(--color-gradient-bg)),
+        url("../../assets/tablet/image-footer.jpg");
+        background-position: center 30%;
+    }
+    
     .cta__title {
         max-inline-size: 20ch;
     }
@@ -34,6 +56,11 @@
 }
 
 @media (min-width: 64em){
+        .cta {
+        background-image:
+        linear-gradient(var(--color-gradient-bg), var(--color-gradient-bg)),
+        url("../../assets/desktop/image-footer.jpg");
+    }
     .cta__title {
         text-align: start;
         max-inline-size: 15ch;
@@ -42,5 +69,10 @@
     .cta__text {
         max-inline-size: 30ch;
         text-align: start;
+    }
+
+    .cta__actions {
+        margin-bottom: auto;
+        margin-left: auto;
     }
 }

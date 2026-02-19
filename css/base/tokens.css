@@ -22,16 +22,19 @@
   --space-200: calc(16 / var(--base) * 1rem); /* 16px */
   --space-300: calc(24 / var(--base) * 1rem); /* 24px */
   --space-400: calc(32 / var(--base) * 1rem); /* 32px */
-  --space-420: calc(36 / var(--base) * 1rem); /* 36px */
-  --space-450: calc(40 / var(--base) * 1rem); /* 40px */
+  --space-500: calc(36 / var(--base) * 1rem); /* 36px */
+  --space-600: calc(40 / var(--base) * 1rem); /* 40px */
 
-  --space-500: calc(48 / var(--base) * 1rem); /* 48px */
-  --space-700: calc(56 / var(--base) * 1rem); /* 56px */
-  --space-800: calc(64 / var(--base) * 1rem); /* 64px */
-  --space-900: calc(72 / var(--base) * 1rem); /* 72px */
-  --space-1000: calc(80 / var(--base) * 1rem); /* 80px */
-  --space-1350: calc( 108 / var(--base) * 1rem); /* 108px */
-  --space-1400: calc(112 / var(--base) * 1rem); /* 112px */
+  --space-700: calc(48 / var(--base) * 1rem); /* 48px */
+  --space-800: calc(56 / var(--base) * 1rem); /* 56px */
+  --space-900: calc(64 / var(--base) * 1rem); /* 64px */
+  --space-1000: calc(72 / var(--base) * 1rem); /* 72px */
+  --space-1100: calc(80 / var(--base) * 1rem); /* 80px */
+  --space-1120: calc(84 / var(--base) * 1rem); /* 84px */
+  --space-1200: calc(108 / var(--base) * 1rem); /* 108px */
+  --space-1300: calc(112 / var(--base) * 1rem); /* 112px */
+  --space-1400: calc(160 / var(--base) * 1rem); /* 160px */
+  --space-1500: calc(303 / var(--base) * 1rem); /* 303px */
   --space-1600: calc(360 / var(--base) * 1rem); /* 360px */
 
 
@@ -92,29 +95,38 @@
 
     /* Spacing */
          /* PAGE STRUCTURE */
-  --space-header-inline: var(--space-1000);
-  --space-header-block-start: var(--space-500);
+  --space-header-inline: var(--space-1100);
+  --space-header-block-start: var(--space-700);
   --space-page-inline: var(--space-400);
-  --space-section-block-start: var(--space-800);
+  --space-section-block-start: var(--space-900);
   --space-section-block-end: var(--space-400);
   --space-main-block-start: var(--space-400);
-  --space-main-block-end: var(--space-800);
-  --space-cta-block-start: var(--space-420);
+  --space-main-block-end: var(--space-900);
+  --space-cta-block-start: var(--space-500);
+  --space-cta-block-end: var(--space-900);
+  --space-cta-inline: var(--space-400);
+
+  --stack-hero-paragraphs: var(--space-300);
+  --stack-features-content: var(--space-900);
+  --stack-features-titles: var(--space-200);
+  --stack-features-paragraphs: var(--space-400);
+
+  --gap-hero: var(--space-700);
+  --gap-buttons: var(--space-200);
+  --gap-images: var(--space-200);
+  --gap-cta: var(--space-300);
+  --padding-button-block: var(--space-200);
+  --padding-button-inline: var(--space-600);
   
 
-  --space-stack-xs: var(--space-200);
-  --space-stack-sm: var(--space-300);
-  --space-stack-md: var(--space-400);
-  --space-stack-lg: var(--space-500);
-  --space-stack-xl: var(--space-800);
-
-  --space-inline-sm: var(--space-200);
-  --space-inline-md: var(--space-200);
-
   /* Figure step */
-    --line-height: var(--space-1000);
-    --circle-size: var(--space-700);
-    --space-background-position: var(--space-1350);
+    --line-height: var(--space-1100);
+    --circle-size: var(--space-800);
+    --space-background-position: var(--space-1200);
+
+    /* Hero Image Size */
+    --hero-image-size--tablet: var(--space-1500);
+    --hero-image-size--desktop: var(--space-1600);
 
   /* Typography */
       /* HEADINGS */
@@ -142,10 +154,11 @@
 /* TABLET */
 @media (min-width: 48em) {
     :root {
-        --space-section-block-end: var(--space-800);
-        --space-main-block-start: var(--space-700);    
+        --space-section-block-end: var(--space-900);
+        --space-main-block-start: var(--space-800);    
 
-        --space-inline-md: var(--space-300);
+        --gap-hero: var(--space-1000);
+        --gap-images: var(--space-300);
 
                 /* HEADINGS */
         --text-heading-xl: var(--font-size-800);
@@ -161,12 +174,17 @@
 /* DESKTOP */
 @media (min-width: 64em) {
     :root {
-        --space-header-block-start: var(--space-1000);
-        --space-main-block-end: var(--space-900);
+        --space-header-block-start: var(--space-1100);
+        --space-main-block-end: var(--space-1000);
+        --space-cta-block-start: var(--space-1120);
+        --space-cta-block-end: var(--space-1300);
+        --space-cta-inline: var(--space-1100);
 
-        --space-stack-sm: var(--space-400);
+        --stack-hero-paragraphs: var(--space-400);
 
-        --space-inline-md: var(--space-400);
+        --gap-hero: var(--space-400);
+        --gap-images: var(--space-400);
+        --gap-cta: var(--space-400);
 
               /* HEADINGS */
         --text-heading-xl: var(--font-size-900);

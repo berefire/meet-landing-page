@@ -3,7 +3,7 @@
     color: var(--color-text-btn-primary);
     font-weight: var(--fw-heading);
     line-height: var(--lh-heading);
-    padding: var(--space-stack-xs) var(--space-450);
+    padding: var(--padding-button-block) var(--padding-button-inline);
     border-radius: var(--radius-xl);
     display: inline-flex;
     

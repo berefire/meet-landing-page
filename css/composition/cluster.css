@@ -1,7 +1,7 @@
 .cluster {
     display: inline-flex;
     flex-direction: column;
-    gap: var(--space-inline-sm);
+    gap: var(--gap-buttons);
     align-items: center;
 }
 

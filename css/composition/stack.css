@@ -1,15 +1,15 @@
-.stack-sm > * + * {
-    margin-block-start: var(--space-stack-sm);
+.stack--hero > * + * {
+    margin-block-start: var(--stack-hero-paragraphs);
 }
 
-.stack-xl > * + * {
-    margin-block-start: var(--space-stack-xl);
+.stack--features > * + * {
+    margin-block-start: var(--stack-features-content);
 }
 
-.stack-md > * + * {
-    margin-block-start: var(--space-stack-md);
+.stack--features__titles > * + * {
+    margin-block-start: var(--stack-features-titles);
 }
 
-.stack-xs > * + * {
-    margin-block-start: var(--space-stack-xs);
+.stack--features__content > * + * {
+    margin-block-start: var(--stack-features-paragraphs);
 }

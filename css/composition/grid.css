@@ -1,14 +1,15 @@
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: var(--gap-cta);
 }
 
 .grid--hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: var(--space-stack-lg);
+    row-gap: var(--gap-hero);
     grid-template-areas:
-        "a c"
+        "a a"
         "b b";
 }
 
@@ -18,7 +19,7 @@
 
 .grid--images {
     display: grid;
-    gap: var(--space-inline-sm);
+    gap: var(--gap-images);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
@@ -27,18 +28,20 @@
     .grid--images {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: none;
-        column-gap: var(--space-inline-md);
+        column-gap: var(--gap-images);
     }
 }
 
 @media (min-width: 64em){
     .grid {
         grid-template-columns: repeat(3, 1fr);
-        column-gap: var(--space-stack-md);
+        grid-template-rows: none;
+        row-gap: none;
+        column-gap: var(--gap-hero);
     }
 
     .grid--hero {
-        height: var(--space-1600);
+        min-block-size: var(--space-1600);
         grid-template-columns: repeat(3, 1fr);
         column-gap: var(--space-stack-md);
         grid-template-areas:

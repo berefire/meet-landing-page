@@ -8,8 +8,9 @@
 }
 
 .box--cta {
-    margin-block-start: var(--space-cta-block-start);
-    margin-inline: var(--space-page-inline);
+    margin-block-start: 108px;
+    padding-inline: var(--space-cta-inline);
+    margin-inline: var(--space-cta-inline);
 }
 
 .box {

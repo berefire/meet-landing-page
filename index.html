@@ -24,11 +24,14 @@
 
   <section class="[ hero ] [ box--hero grid--hero ]">
     <div class="[ hero__media hero__media--left ]">
-<img class="[ hero__image ]" src="./assets/desktop/image-hero-left.png" alt="Image hero left">
+<picture>
+  <source srcset="./assets/desktop/image-hero-left.png" media="(min-width: 64em)">
+  <img class="[ hero__image ]" src="./assets/tablet/image-hero.png" alt="" class="Hero image left">
+</picture>
     </div>
       
       
-    <div class="[ hero__content ] [ stack-sm box ] [ text-center ]">
+    <div class="[ hero__content ] [ stack--hero box ] [ text-center ]">
       <h1 class="[ hero__title ] [ center ]">Group Chat for Everyone</h1>
       <p class="[ hero__text ] [ center ]">Meet makes it easy to connect with others face-to-face virtually and collaborate across
         any device.</p>
@@ -41,12 +44,12 @@
     </div>
 
     <div class="[ hero__media hero__media--right ]">
-<img class="[ hero__image ]" src="./assets/desktop/image-hero-right.png" alt="Image hero right">
+<img class="[ hero__image ]" src="./assets/desktop/image-hero-right.png" alt="Hero image right">
     </div>
     
 
   </section>
-  <main class="[ features ] [ box--features ] [ stack-xl ]">
+  <main class="[ features ] [ box--features ] [ stack--features ]">
     <p class="[ step ] [ center ]"><span>01</span></p>
 
     <div class="[ features__images ] [ grid--images ]">
@@ -63,8 +66,8 @@
         alt="Man Texting">
     </div>
 
-    <div class="[ features__content ] [ stack-md ] [ text-center ]">
-      <div class="[ features__header ] [ stack-xs ]">
+    <div class="[ features__content ] [ stack--features__content ] [ text-center ]">
+      <div class="[ features__header ] [ stack--features__titles ]">
         <h2 class="[ features__eyebrow ]">Built for modern use</h2>
 
         <h2 class="[ features__title ] [ center ]">Smarter meetings, all in one place</h2>
@@ -76,17 +79,18 @@
 
     </div>
   </main>
+  
   <footer class="[ cta ]">
     <div class="[ cta__figure ]">
       <p class="[ step ]"><span>02</span></p>
     </div>
 
-    <div class="[ cta__content ] [ box--cta stack-sm grid ] [ text-center ]">
+    <div class="[ cta__content ] [ box--cta grid ] [ text-center ]">
       <h2 class="[ cta__title ] [ center ] [ text-center ]">Experience more together</h2>
       <p class="[ cta__text ] [ center ]">Stay connected with reliable HD meetings and unlimited one-on-one and group video
         sessions.</p>
 
-      <div class="[ cta__actions ] [ center ]">
+      <div class="[ cta__actions ]">
         <a class="[ btn btn--primary ]" href="#">Download <span class="btn__version">v1.3</span></a>
       </div>
 
