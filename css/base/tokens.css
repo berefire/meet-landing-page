@@ -1,21 +1,20 @@
 /* PRIMITIVES */
 :root {
+  /* Colors */
+  --cyan-600: hsl(192, 37%, 48%);
+  --cyan-300: hsl(192, 90%, 77%);
+  --purple-600: hsl(268, 34%, 53%);
+  --purple-300: hsl(268, 100%, 86%);
+  --slate-900: hsl(240, 21%, 20%);
+  --slate-600: hsl(240, 10%, 57%);
+  --slate-300: hsl(240, 18%, 85%);
+  --white: hsl(0, 0%, 98%);
 
-    /* Colors */
-    --cyan-600: hsl(192, 37%, 48%);
-    --cyan-300: hsl(192, 90%, 77%);
-    --purple-600: hsl(268, 34%, 53%);
-    --purple-300: hsl(268, 100%, 86%);
-    --slate-900: hsl(240, 21%, 20%);
-    --slate-600: hsl(240, 10%, 57%);
-    --slate-300: hsl(240, 18%, 85%);
-    --white: hsl(0, 0%, 98%);
+  /* Radius */
+  --radius-xl: calc(29 / var(--base) * 1rem); /* 29px */
 
-    /* Radius */
-    --radius-xl: calc(29 / var(--base) * 1rem); /* 29px */
-    
-    /* Spacing */
-    --base: 16;
+  /* Spacing */
+  --base: 16;
 
   --space-50: calc(4 / var(--base) * 1rem); /* 4px */
   --space-100: calc(8 / var(--base) * 1rem); /* 8px */
@@ -37,13 +36,9 @@
   --space-1500: calc(303 / var(--base) * 1rem); /* 303px */
   --space-1600: calc(360 / var(--base) * 1rem); /* 360px */
 
-
   /* Typography */
-    /* Font family */
+  /* Font family */
   --font-family-base: "Red Hat Display", sans-serif;
-
-  /* Font sizes */
-  --base: 16;
 
   --font-size-100: calc(12 / var(--base) * 1rem);
   --font-size-200: calc(14 / var(--base) * 1rem);
@@ -69,32 +64,34 @@
 
 /* SEMANTICS */
 :root {
-    /* Colors */
-    /* BRAND */
-    --color-primary: var(--cyan-60);
-    --color-accent: var(--purple-600);
+  /* Colors */
+  /* BRAND */
+  --color-primary: var(--cyan-60);
+  --color-accent: var(--purple-600);
 
-    /* TEXT */
-    --color-text-main: var(--slate-900);
-    --color-text-muted: var(--slate-600);
-    --color-text-footer: var(--white);
+  /* TEXT */
+  --color-text-main: var(--slate-900);
+  --color-text-muted: var(--slate-600);
+  --color-text-footer: var(--white);
 
-    --color-border-muted: var(--slate-300);
+  --color-border-muted: var(--slate-300);
 
-    /* SPECIAL TEXT */
-    --color-text-eyebrow: var(--cyan-600);
-    --color-text-btn-primary: var(--white);
-    --color-text-btn-secondary: var(--cyan-300);
+  /* SPECIAL TEXT */
+  --color-text-eyebrow: var(--cyan-600);
+  --color-text-btn-primary: var(--white);
+  --color-text-btn-secondary: var(--cyan-300);
 
-    /* BUTTON BACKGROUNDS */
-    --color-btn-primary-bg: var(--cyan-600);
-    --color-btn-secondary-bg: var(--purple-600);
+  /* BUTTON BACKGROUNDS */
+  --color-btn-primary-bg: var(--cyan-600);
+  --color-btn-secondary-bg: var(--purple-600);
+  --color-btn-primary-hover-bg: #71c0d4;
+  --color-btn-secondary-hover-bg: #b18bdd;
 
-    /* Gradient */
-    --color-gradient-bg: rgba(77, 150, 168, 0.9);
+  /* Gradient */
+  --color-gradient-bg: rgba(77, 150, 168, 0.9);
 
-    /* Spacing */
-         /* PAGE STRUCTURE */
+  /* Spacing */
+  /* PAGE STRUCTURE */
   --space-header-inline: var(--space-1100);
   --space-header-block-start: var(--space-700);
   --space-page-inline: var(--space-400);
@@ -102,7 +99,7 @@
   --space-section-block-end: var(--space-400);
   --space-main-block-start: var(--space-400);
   --space-main-block-end: var(--space-900);
-  --space-cta-block-start: var(--space-500);
+  --space-cta-block-start: var(--space-1200);
   --space-cta-block-end: var(--space-900);
   --space-cta-inline: var(--space-400);
 
@@ -113,87 +110,141 @@
 
   --gap-hero: var(--space-700);
   --gap-buttons: var(--space-200);
+  --gap-text-btn: var(--space-50);
   --gap-images: var(--space-200);
   --gap-cta: var(--space-300);
   --padding-button-block: var(--space-200);
   --padding-button-inline: var(--space-600);
-  
+  --padding-cta-content: var(--space-900);
 
   /* Figure step */
-    --line-height: var(--space-1100);
-    --circle-size: var(--space-800);
-    --space-background-position: var(--space-1200);
+  --line-height: var(--space-1100);
+  --circle-size: var(--space-800);
+  --space-background-position: var(--space-1200);
+  --cta-figure-offset: translateY(-80%);
 
-    /* Hero Image Size */
-    --hero-image-size--tablet: var(--space-1500);
-    --hero-image-size--desktop: var(--space-1600);
+  /* Hero Image Size */
+  --hero-image-size--tablet: var(--space-1500);
+  --hero-image-size--desktop: var(--space-1600);
+
+  /* Hero Image Offset */
+  --hero-image-left-offset: translateX(-6%);
+
+  /* Hero Image With */
+  --hero-image-width: 114%;
 
   /* Typography */
-      /* HEADINGS */
-    --text-heading-xl: var(--font-size-700);
-    --text-heading-lg: var(--font-size-500);
+  /* HEADINGS */
+  --text-heading-xl: var(--font-size-700);
+  --text-heading-lg: var(--font-size-500);
 
-    /* BODY TEXT */
-    --text-body: var(--font-size-300);
+  /* BODY TEXT */
+  --text-body: var(--font-size-300);
 
-    /* EYEBROW / LABEL */
-    --text-eyebrow: var(--font-size-100);
+  /* EYEBROW / LABEL */
+  --text-eyebrow: var(--font-size-100);
 
-    /* FONT WEIGHTS */
-    --fw-heading: var(--font-weight-black);
-    --fw-body: var(--font-weight-medium);
+  /* FONT WEIGHTS */
+  --fw-heading: var(--font-weight-black);
+  --fw-body: var(--font-weight-medium);
 
-    /* LINE HEIGHT */
-    --lh-heading: var(--line-height-tight);
-    --lh-body: var(--line-height-normal);
+  /* LINE HEIGHT */
+  --lh-heading: var(--line-height-tight);
+  --lh-body: var(--line-height-normal);
 
-    /* LETTER SPACING */
-    --tracking-eyebrow: var(--tracking-wide);
+  /* LETTER SPACING */
+  --tracking-eyebrow: var(--tracking-wide);
+
+  /* Typography width */
+  --hero-title-max-width: 10ch;
+  --hero-text-max-width: 29ch;
+  --features-title-max-width: 14ch;
+  --features-description-max-width: 28ch;
+  --cta-title-max-width: 15ch;
+  --cta-text-max-width: 32ch;
+
+  /* Background image position */
+  --cta-bg-focus-y: 0%;
+
+  /* Ubication of the figure in the CTA */
+  --cta-bg-image: url("../../assets/mobile/image-footer.jpg");
 }
 
 /* TABLET */
 @media (min-width: 48em) {
-    :root {
-        --space-section-block-end: var(--space-900);
-        --space-main-block-start: var(--space-800);    
+  :root {
+    --space-section-block-end: var(--space-900);
+    --space-main-block-start: var(--space-800);
 
-        --gap-hero: var(--space-1000);
-        --gap-images: var(--space-300);
+    --gap-hero: var(--space-1000);
+    --gap-images: var(--space-300);
 
-                /* HEADINGS */
-        --text-heading-xl: var(--font-size-800);
-        --text-heading-lg: var(--font-size-600);
+    /* HEADINGS */
+    --text-heading-xl: var(--font-size-800);
+    --text-heading-lg: var(--font-size-600);
 
-        /* EYEBROW / LABEL */
-        --text-eyebrow: var(--font-size-200);
+    /* EYEBROW / LABEL */
+    --text-eyebrow: var(--font-size-200);
 
-    }
-    
+    /* Typography width */
+    --hero-text-max-width: 40ch;
+    --features-title-max-width: 18ch;
+    --features-description-max-width: 48ch;
+    --cta-title-max-width: 20ch;
+    --cta-text-max-width: 48ch;
+
+    --cta-bg-focus-y: 5%;
+    --cta-bg-image: url("../../assets/tablet/image-footer.jpg");
+
+    /* Hero Image With */
+    --hero-image-width: 106%;
+
+    /* Hero Image Offset */
+    --hero-image-left-offset: translateX(-3%);
+  }
 }
 
 /* DESKTOP */
 @media (min-width: 64em) {
-    :root {
-        --space-header-block-start: var(--space-1100);
-        --space-main-block-end: var(--space-1000);
-        --space-cta-block-start: var(--space-1120);
-        --space-cta-block-end: var(--space-1300);
-        --space-cta-inline: var(--space-1100);
+  :root {
+    --space-header-block-start: var(--space-1100);
+    --space-main-block-end: var(--space-1000);
+    --space-cta-block-end: var(--space-1300);
+    --space-cta-inline: var(--space-1100);
+    --padding-cta-content: var(--space-1300);
 
-        --stack-hero-paragraphs: var(--space-400);
+    --stack-hero-paragraphs: var(--space-400);
 
-        --gap-hero: var(--space-400);
-        --gap-images: var(--space-400);
-        --gap-cta: var(--space-400);
+    --gap-hero: var(--space-400);
+    --gap-images: var(--space-400);
+    --gap-cta: var(--space-400);
 
-              /* HEADINGS */
-        --text-heading-xl: var(--font-size-900);
-        --text-heading-lg: var(--font-size-700);
+    /* HEADINGS */
+    --text-heading-xl: var(--font-size-900);
+    --text-heading-lg: var(--font-size-700);
 
-        /* BODY TEXT */
-        --text-body: var(--font-size-400);
+    /* BODY TEXT */
+    --text-body: var(--font-size-400);
 
-        /* EYEBROW / LABEL */
-        --text-eyebrow: var(--font-size-300);
-    }
+    /* EYEBROW / LABEL */
+    --text-eyebrow: var(--font-size-300);
+
+    /* Typography width */
+    --hero-text-max-width: 35ch;
+    --features-title-max-width: 15ch;
+    --features-description-max-width: 45ch;
+    --cta-title-max-width: 15ch;
+    --cta-text-max-width: 30ch;
+
+    --cta-bg-focus-y: 40%;
+    --cta-bg-image: url("../../assets/desktop/image-footer.jpg");
+
+    /* Hero Image With */
+    --hero-image-width: 90%;
+    --hero-image-inline-size: 50%;
+
+    /* Hero Image Offset */
+    --hero-image-left-offset: translateX(-8%);
+    --hero-image-right-offset: translate(18%, 18%);
+  }
 }

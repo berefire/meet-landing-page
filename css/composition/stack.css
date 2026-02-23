@@ -1,15 +1,15 @@
 .stack--hero > * + * {
-    margin-block-start: var(--stack-hero-paragraphs);
+  margin-block-start: var(--stack-hero-paragraphs);
 }
 
 .stack--features > * + * {
-    margin-block-start: var(--stack-features-content);
+  margin-block-start: var(--stack-features-content);
 }
 
 .stack--features__titles > * + * {
-    margin-block-start: var(--stack-features-titles);
+  margin-block-start: var(--stack-features-titles);
 }
 
 .stack--features__content > * + * {
-    margin-block-start: var(--stack-features-paragraphs);
+  margin-block-start: var(--stack-features-paragraphs);
 }

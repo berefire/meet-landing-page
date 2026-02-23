@@ -1,9 +1,13 @@
 .cta .btn--primary {
-    background-color: var(--color-accent);
+  background-color: var(--color-accent);
+}
+
+.cta .btn--primary:hover {
+  background-color: var(--color-btn-secondary-hover-bg);
 }
 
 .cta .btn__version {
-    --color-btn-secondary-bg: var(--purple-300);
+  --color-btn-secondary-bg: var(--purple-300);
 
-    color: var(--color-btn-secondary-bg);
+  color: var(--color-btn-secondary-bg);
 }

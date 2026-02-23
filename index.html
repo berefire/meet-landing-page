@@ -24,16 +24,20 @@
 
   <section class="[ hero ] [ box--hero grid--hero ]">
     <div class="[ hero__media hero__media--left ]">
-<picture>
-  <source srcset="./assets/desktop/image-hero-left.png" media="(min-width: 64em)">
-  <img class="[ hero__image ]" src="./assets/tablet/image-hero.png" alt="" class="Hero image left">
-</picture>
+      <picture>
+        <source srcset="./assets/desktop/image-hero-left.png" width="394" height="303" media="(min-width: 64em)">
+        <img class="[ hero__image ]" width="400" height="148" src="./assets/mobile/image-hero-400.webp" srcset="
+      ./assets/mobile/image-hero-400.webp 400w,
+      ./assets/tablet/image-hero-600.webp 600w
+  " sizes="(min-width: 48em) 600px , 400px" alt="Hero Image" class="Hero image left">
+      </picture>
     </div>
-      
-      
+
+
     <div class="[ hero__content ] [ stack--hero box ] [ text-center ]">
       <h1 class="[ hero__title ] [ center ]">Group Chat for Everyone</h1>
-      <p class="[ hero__text ] [ center ]">Meet makes it easy to connect with others face-to-face virtually and collaborate across
+      <p class="[ hero__text ] [ center ]">Meet makes it easy to connect with others face-to-face virtually and
+        collaborate across
         any device.</p>
 
       <div class="[ hero__actions ] [ cluster ]">
@@ -44,25 +48,26 @@
     </div>
 
     <div class="[ hero__media hero__media--right ]">
-<img class="[ hero__image ]" src="./assets/desktop/image-hero-right.png" alt="Hero image right">
+      <img class="[ hero__image ]" width="394" height="303" src="./assets/desktop/image-hero-right.png"
+        alt="Hero image right">
     </div>
-    
+
 
   </section>
   <main class="[ features ] [ box--features ] [ stack--features ]">
     <p class="[ step ] [ center ]"><span>01</span></p>
 
     <div class="[ features__images ] [ grid--images ]">
-      <img class="[ features__image ]" width="510" height="484" src="./assets/desktop/image-woman-in-videocall.jpg"
-        alt="Woman in videocall">
+      <img class="[ features__image ]" width="430" height="410" loading="lazy" decoding="async"
+        src="./assets/mobile/image-woman-in-videocall-300.webp" alt="Woman in videocall">
 
-      <img class="[ features__image ]" width="510" height="484" src="./assets/desktop/image-women-videochatting.jpg"
+      <img class="[ features__image ]" width="152" height="144" src="./assets/mobile/image-women-videochatting-300.webp"
         alt="Women videochatting">
 
-      <img class="[ features__image ]" width="510" height="484" src="./assets/desktop/image-men-in-meeting.jpg"
+      <img class="[ features__image ]" width="152" height="144" src="./assets/mobile/image-men-in-meeting-300.webp"
         alt="Men in meeting">
 
-      <img class="[ features__image ]" width="510" height="484" src="./assets/desktop/image-man-texting.jpg"
+      <img class="[ features__image ]" width="152" height="144" src="./assets/mobile/image-man-texting-300.webp"
         alt="Man Texting">
     </div>
 
@@ -79,7 +84,7 @@
 
     </div>
   </main>
-  
+
   <footer class="[ cta ]">
     <div class="[ cta__figure ]">
       <p class="[ step ]"><span>02</span></p>
@@ -87,7 +92,8 @@
 
     <div class="[ cta__content ] [ box--cta grid ] [ text-center ]">
       <h2 class="[ cta__title ] [ center ] [ text-center ]">Experience more together</h2>
-      <p class="[ cta__text ] [ center ]">Stay connected with reliable HD meetings and unlimited one-on-one and group video
+      <p class="[ cta__text ] [ center ]">Stay connected with reliable HD meetings and unlimited one-on-one and group
+        video
         sessions.</p>
 
       <div class="[ cta__actions ]">
