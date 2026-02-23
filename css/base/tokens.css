@@ -23,6 +23,7 @@
   --space-400: calc(32 / var(--base) * 1rem); /* 32px */
   --space-500: calc(36 / var(--base) * 1rem); /* 36px */
   --space-600: calc(40 / var(--base) * 1rem); /* 40px */
+  --space-650: calc(44 / var(--base) * 1rem); /* 44px */
 
   --space-700: calc(48 / var(--base) * 1rem); /* 48px */
   --space-800: calc(56 / var(--base) * 1rem); /* 56px */
@@ -95,6 +96,7 @@
   --space-header-inline: var(--space-1100);
   --space-header-block-start: var(--space-700);
   --space-page-inline: var(--space-400);
+  --space-features-images-inline: var(--space-400);
   --space-section-block-start: var(--space-900);
   --space-section-block-end: var(--space-400);
   --space-main-block-start: var(--space-400);
@@ -175,6 +177,7 @@
   :root {
     --space-section-block-end: var(--space-900);
     --space-main-block-start: var(--space-800);
+    --space-features-images-inline: var(--space-650);
 
     --gap-hero: var(--space-1000);
     --gap-images: var(--space-300);
@@ -209,6 +212,7 @@
   :root {
     --space-header-block-start: var(--space-1100);
     --space-main-block-end: var(--space-1000);
+    --space-features-images-inline: var(--space-1400);
     --space-cta-block-end: var(--space-1300);
     --space-cta-inline: var(--space-1100);
     --padding-cta-content: var(--space-1300);
