@@ -10,12 +10,13 @@
   --slate-300: hsl(240, 18%, 85%);
   --white: hsl(0, 0%, 98%);
 
+  /* Base */
+  --base: 16;
+  
   /* Radius */
   --radius-xl: calc(29 / var(--base) * 1rem); /* 29px */
 
   /* Spacing */
-  --base: 16;
-
   --space-50: calc(4 / var(--base) * 1rem); /* 4px */
   --space-100: calc(8 / var(--base) * 1rem); /* 8px */
   --space-200: calc(16 / var(--base) * 1rem); /* 16px */
@@ -65,8 +66,7 @@
 
 /* SEMANTICS */
 :root {
-  /* Colors */
-  /* BRAND */
+  /* Colors and Brand variables combined for clarity */
   --color-primary: var(--cyan-60);
   --color-accent: var(--purple-600);
 

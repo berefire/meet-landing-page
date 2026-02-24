@@ -47,7 +47,7 @@
   }
 
   .cta__btn {
-    margin-bottom: auto;
-    margin-left: auto;
+    margin-block-end: auto;
+    margin-inline-start: auto;
   }
 }
