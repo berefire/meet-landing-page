@@ -1,5 +1,5 @@
-/* PRIMITIVES */
 :root {
+  /* PRIMITIVES */
   /* Colors */
   --cyan-600: hsl(192, 37%, 48%);
   --cyan-300: hsl(192, 90%, 77%);
@@ -62,10 +62,8 @@
 
   /* Letter Spacing */
   --tracking-wide: 0.25em;
-}
-
+  
 /* SEMANTICS */
-:root {
   /* Colors and Brand variables combined for clarity */
   --color-primary: var(--cyan-60);
   --color-accent: var(--purple-600);
