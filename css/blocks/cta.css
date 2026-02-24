@@ -40,11 +40,9 @@
 @media (min-width: 64em) {
   .cta__title {
     text-align: start;
-    max-inline-size: var(--cta-title-max-width);
   }
 
   .cta__text {
-    max-inline-size: var(--cta-text-max-width);
     text-align: start;
   }
 
