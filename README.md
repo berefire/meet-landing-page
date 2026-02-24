@@ -1,99 +1,307 @@
-# Frontend Mentor - Meet landing page
+# Frontend Mentor - Meet landing page solution
 
-![Design preview for the Meet landing page coding challenge](./preview.jpg)
+This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+---
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+## Table of contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+- [Overview](#-overview)
+  - [The challenge](#-the-challenge)
+  - [Screenshot](#-screenshot)
+    - [Desktop](#desktop)
+    - [Tablet](#tablet)
+    - [Mobile](#mobile)
+  - [Links](#-links)
+- [My Process](#️-my-process)
+  - [Architecture](#️-architecture)
+  - [Design Tokens System](#-design-tokens-system)
+  - [Responsive Image Strategy](#-responsive-image-strategy)
+  - [Responsive Strategy](#-responsive-strategy)
+  - [Built With](#-built-with)
+  - [Performance Optimization](#-performance-optimization)
+  - [Accessibility Considerations](#-accessibility-considerations)
+  - [What I Reinforced](#-what-i-reinforced)
+  - [Future Improvements](#-future-improvements)
+  - [Useful Resources](#-useful-resources)
+  - [AI Collaboration](#-ai-collaboration)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
 
-**To do this challenge, you need a decent understanding of HTML & CSS.**
+---
 
-## The challenge
+## 📋 Overview
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+This project recreates the Meet Landing Page using semantic HTML and a scalable CSS architecture based on CUBE CSS principles combined with BEM methodology.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+The main focus was:
 
-Your users should be able to:
+- Building a structured token system
+- Separating layout from components
+- Implementing responsive images correctly
+- Improving Lighthouse performance
+- Maintaining clean architectural boundaries
+
+---
+
+## 🎯 The challenge
+
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+---
 
-## Where to find everything
+## 📸 Screenshot
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+### Desktop
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+![Desktop view](./assets/screenshots/desktop.png)
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+### Hover States
 
-## Using AI coding assistants
+![Hover States view](./assets/screenshots/hover-states.png)
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+### Tablet
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+![Tablet view](./assets/screenshots/tablet.png)
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+### Mobile
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+![Mobile view](./assets/screenshots/mobile.png)
 
-## Building your project
+---
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## 🔗 Links
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/). **⚠️ IMPORTANT ⚠️: There are already a couple of `.gitignore` files in this project. Please do not remove them or change the content of the files. If you create a brand new project, please use the `.gitignore` files provided in your new codebase. This is to avoid the accidental upload of the design files to GitHub. With these premium challenges, please be sure not to share the design files in your GitHub repo. Thanks!**
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [https://berefire.github.io/meet-landing-page/](https://berefire.github.io/meet-landing-page/)
 
-## Deploying your project
+---
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+## ⚙️ My Process
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+This project followed a mobile-first approach, progressively enhancing layout and image behavior across breakpoints.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+A major focus was optimizing image delivery using `srcset`, `sizes`, and `<picture>` while ensuring Lighthouse performance improvements.
 
-## Create a custom `README.md`
+---
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### 🏗️ Architecture
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+The project follows the CUBE CSS methodology:
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```html
+css/
+├── base/
+│   ├── fonts.css
+│   ├── reset.css
+│   ├── global.css
+│   └── tokens.css
+│
+├── composition/
+│   ├── grid.css
+│   ├── stack.css
+│   ├── cluster.css
+│   ├── box.css
+|   └── center.css
+│
+├── blocks/
+│   ├── hero.css
+│   ├── features.css
+│   ├── cta.css
+|   ├── step.css
+│   └── button.css
+│
+├── utilities/
+│   └── text.css
+|
+├── exceptions/
+│   └── exceptions.css
+|
+└── main.css
+```
 
-## Submitting your solution
+---
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+### Layer Responsibilities
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- **Base** → Tokens, reset, global typography and fonts
+- **Composition** → Layout primitives (grid, stack, cluster, box and center)
+- **Blocks** → Independent components (hero, features, cta, step and button)
+- **Utilities** → Small helper (text-align)
+- **Exceptions** → Special cases (exceptions)
 
-**⚠️ IMPORTANT ⚠️: With these premium challenges, please be sure not to upload the design files to GitHub when you're submitting to the platform and sharing it around. If you've created a brand new project, the easiest way to do that is to copy across the `.gitignore` provided in this starter project.**
+This separation ensures:
 
-## Sharing your solution
+- Layout does not leak into components
+- Components remain portable
+- Tokens drive visual consistency
 
-There are multiple places you can share your solution:
+---
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+### 🎨 Design Tokens System
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+The design system is powered by:
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+#### Primitive tokens
 
-## Got feedback for us?
+- Raw spacing scale
+- Color values
+- Font sizes
+- Font weights
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+Example:
 
-**Have fun building!** 🚀
+```css
+:root {
+  --space-300: 1.5rem;
+  --space-400: 2rem;
+  --fw-bold: 900;
+}
+````
+
+#### Semantic tokens
+
+- Section spacing
+- Stack spacing
+- CTA padding
+- Text roles
+
+Example:
+
+```css
+:root {
+  --space-section-block-start: var(--space-800);
+  --text-heading-xl: 2.5rem;
+}
+```
+
+---
+
+### 🖼 Responsive Image Strategy
+
+A major improvement in this project was implementing accurate responsive images.
+
+Key improvements:
+
+- Measured real rendered sizes using DevTools
+- Generated optimized image variants
+- Used correct sizes values based on layout
+
+---
+
+### 📐 Responsive Strategy
+
+- **Mobile:** Single column layout
+- **Tablet:** Grid adjustments with structured spacing
+- **Desktop:** Three-column hero layout with cropped media
+
+Media queries were used for global layout shifts, while layout primitives handled spacing consistency.
+
+Container queries were tested but not applied globally since layout changes depended on viewport width.
+
+---
+
+### 🛠 Built With
+
+- Semantic HTML5
+- CSS Custom Properties
+- CUBE CSS architecture
+- BEM methodology
+- CSS Grid
+- Flexbox
+- Logical properties
+- Mobile-first workflow
+- Responsive images (`srcset`, `sizes`, `<picture>`)
+- Lighthouse performance optimization
+- WebP image format
+
+---
+
+### 🚀 Performance Optimization
+
+Performance improvements included:
+
+- Replacing large images with properly scaled variants
+- Fixing aspect-ratio mismatch warnings
+- Removing oversized image downloads
+- Improving performance score from ~91 to optimized state
+
+---
+
+### ♿ Accessibility Considerations
+
+- Proper heading hierarchy
+- Decorative images marked appropriately
+- Meaningful alt attributes
+- Logical property usage for better scalability
+- Clear button labeling
+
+---
+
+### 📚 What I Reinforced
+
+- Accurate use of `srcset` and `sizes`
+- Measuring rendered size before optimizing images
+- Separating layout and component logic
+- Implementing semantic design tokens
+- Performance-driven development
+- Architectural thinking over visual-only styling
+
+---
+
+### 🔮 Future Improvements
+
+- Introduce `@layer` organization
+- Expand semantic token abstraction
+- Add container queries selectively
+- Introduce automated image generation workflow
+
+---
+
+### 📖 Useful resources
+
+- [https://gwfh.mranftl.com/fonts](https://gwfh.mranftl.com/fonts) - Amazing place to obtain fonts of any type.
+- [https://squoosh.app/](https://squoosh.app/) - This site helps you to convert any image with a format and size desired.
+- [https://web.dev/learn/design](https://web.dev/learn/design) Good place to find any information about responsive design.
+
+---
+
+### 🤖 AI Collaboration
+
+During this project, I used ChatGPT as a collaborative assistant to refine architectural decisions, optimize responsive images, and debug complex CSS behavior.
+
+#### How I Used AI
+
+- Improving Lighthouse performance by correctly scaling image variants.
+- Refining semantic token naming and CUBE CSS structure.
+- Debugging layout issues related to aspect-ratio, object-fit, and container queries.
+- All suggestions were validated using DevTools before implementation.
+
+#### What Worked Well
+
+- AI helped explain browser behavior (especially responsive images).
+- It supported architectural thinking rather than just generating code.
+- It accelerated debugging without replacing manual validation.
+
+#### What Didn’t Work Well
+
+- Early assumptions about breakpoints instead of measuring actual rendered sizes.
+- Over-reliance on theoretical values before testing in DevTools.
+
+Overall, AI served as a conceptual guide and reviewer, while all implementation and validation were handled manually.
+
+---
+
+## 👤 Author
+
+- Frontend Mentor - [@berefire](https://www.frontendmentor.io/profile/berefire)
+- GitHub - [@berefire](https://github.com/berefire)
+
+---
+
+## 🙏 Acknowledgments
+
+Thanks to Frontend Mentor for providing realistic challenges that encourage architectural thinking, not just layout replication.
