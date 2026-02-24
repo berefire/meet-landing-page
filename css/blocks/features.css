@@ -17,6 +17,7 @@
   text-transform: uppercase;
   letter-spacing: var(--tracking-eyebrow);
   color: var(--color-text-eyebrow);
+  font-weight: var(--fw-heading);
 }
 
 .features__title {
