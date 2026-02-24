@@ -75,7 +75,7 @@ Users should be able to:
 
 ## 🔗 Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/meet-landing-page-with-cube-css-and-responsive-images-4RGU5N4lwA](https://www.frontendmentor.io/solutions/meet-landing-page-with-cube-css-and-responsive-images-4RGU5N4lwA)
 - Live Site URL: [https://berefire.github.io/meet-landing-page/](https://berefire.github.io/meet-landing-page/)
 
 ---
