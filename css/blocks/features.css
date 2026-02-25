@@ -28,6 +28,7 @@
 }
 
 .features__description {
+  font-size: var(--text-body);
   color: var(--color-text-muted);
   max-inline-size: var(--features-description-max-width);
 }
