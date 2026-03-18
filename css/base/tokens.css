@@ -65,7 +65,7 @@
   
 /* SEMANTICS */
   /* Colors and Brand variables combined for clarity */
-  --color-primary: var(--cyan-60);
+  --color-primary: var(--cyan-600);
   --color-accent: var(--purple-600);
 
   /* TEXT */

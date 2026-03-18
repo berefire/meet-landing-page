@@ -10,7 +10,8 @@
   row-gap: var(--gap-hero);
   grid-template-areas:
     "a a"
-    "b b";
+    "b b"
+    "c c";
 }
 
 .grid--hero > :nth-child(1) {
@@ -33,7 +34,7 @@
 @media (min-width: 48em) {
   .grid--images {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: none;
+    grid-template-rows: 1fr;
     column-gap: var(--gap-images);
   }
 }
@@ -41,15 +42,15 @@
 @media (min-width: 64em) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: none;
-    row-gap: none;
+    grid-template-rows: 1fr;
+    row-gap: 0;
     column-gap: var(--gap-hero);
   }
 
   .grid--hero {
     min-block-size: var(--space-1600);
     grid-template-columns: repeat(3, 1fr);
-    column-gap: var(--space-stack-md);
+    column-gap: var(--space-400);
     grid-template-areas: "a b c";
   }
 }
