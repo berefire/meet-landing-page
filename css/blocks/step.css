@@ -7,7 +7,7 @@
   content: "";
 
   width: 0.125em;
-  height: var(--line-height);
+  height: var(--line-step);
   background: var(--color-border-muted);
 }
 

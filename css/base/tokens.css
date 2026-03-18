@@ -118,7 +118,7 @@
   --padding-cta-content: var(--space-900);
 
   /* Figure step */
-  --line-height: var(--space-1100);
+  --line-step: var(--space-1100);
   --circle-size: var(--space-800);
   --space-background-position: var(--space-1200);
   --cta-figure-offset: translateY(-80%);
